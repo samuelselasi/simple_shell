@@ -1,4 +1,4 @@
-# 0x16. C - Simple Shell
+# C Custom Linux Shell
 ## Background Context
 * A simple UNIX command interpreter.
 ![shell](https://user-images.githubusercontent.com/85158665/219971433-f2b21b08-f3c0-491d-a13b-f925b05660f0.jpeg)
