@@ -22,27 +22,24 @@ At the end of this project, it is expected to be able to explain to anyone, with
 * What is `EOF` / “end-of-file”?
 ## Requirements`
 ### General
-* Allowed editors: `vi`, `vim`, `emacs`
-* All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options `-Wall -Werror -Wextra -pedantic -std=gnu89`
-* All your files should end with a new line
-* A `README.md` file, at the root of the folder of the project is mandatory
-* Your code should use the `Betty` style. It will be checked using [betty-style.pl](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl) and [betty-doc.pl](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl)
-* Your shell should not have any memory leaks
+* Editors: `vi`, `vim`
+* All files compiled on Ubuntu 20.04 LTS using gcc, using the options `-Wall -Werror -Wextra -pedantic -std=gnu89`
+* All files end with a new line
+* Code uses the `Betty` style. Checked using [betty-style.pl](https://github.com/holbertonschool/Betty/blob/master/betty-style.pl) and [betty-doc.pl](https://github.com/holbertonschool/Betty/blob/master/betty-doc.pl)
+* Shell has no memory leaks
 * No more than 5 functions per file
-* All your header files should be include guarded
-* Use system calls only when you need to ([why?](https://www.quora.com/Why-are-system-calls-expensive-in-operating-systems))
-* Write a `README` with the description of your project
-* You should have an `AUTHORS` file at the root of your repository, listing all individuals having contributed content to the repository. Format, see [Docker](https://github.com/moby/moby/blob/master/AUTHORS)
+* All header files are include guarded: [shell](./shell.h), [error](./error.h), [help](./help.h)
+* System calls used only when needed ([why?](https://www.quora.com/Why-are-system-calls-expensive-in-operating-systems))
 ## More Info
 ### Output
-* Unless specified otherwise, your program must have the exact same output as `sh` (`/bin/sh`) as well as the exact same error output.
-* The only difference is when you print an error, the name of the program must be equivalent to your `argv[0]` (See below)
+* Custom shell has the exact same output as `sh` (`/bin/sh`) as well as the exact same error output.
+* The only difference is when you print an error, the name of the program is equivalent to the `argv[0]` (See below)
 ## Compilation
 ```
 gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 ```
 ## Testing
-Your shell should work like this in interactive mode:
+Custom shell works like this in interactive mode:
 ```
 vagrant@ubuntu-focal:~/simple_shell$ ./hsh
 $ /bin/ls
@@ -62,7 +59,7 @@ vagrant@ubuntu-focal:~/simple_shell$
 ```
 ## Tasks
 ```
-0. Betty would be proud
+0. Code for custom shell complies with [Betty](https://medium.com/@onepunchcoder/writing-clean-effective-code-b29dcfb09ae) conventions.
 ```
 Code passes Betty checks.
 * Run `betty *` to verify
